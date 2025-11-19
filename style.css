@@ -184,6 +184,17 @@ li {
     background-color: #1c1e21;
     border: #1c1e21;
 }
-
-
+.third-section {
+    width: 100%;
+    height: 100vh;
+    background: #fcf5eb;
+    padding: 20px 30px;
+    /* overflow: hidden; */
+}
+.third-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
 
