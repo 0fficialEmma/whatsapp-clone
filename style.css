@@ -197,4 +197,36 @@ li {
     justify-content: center;
     gap: 5em;
 }
+.third-content h1 {
+    font-size: 3.7em;
+    font-weight: 400;
+    color: #1c1e21;
+    margin-bottom: 25px;
+    line-height: 1;
+    margin-right: 3em;
+}
+.third-content p {
+    font-size: 1.1em;
+    color: #1c1e21;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.learn button {
+    border: none;
+    background-color: #fcf5eb;
+    font-size: 1.3em;
+    font-weight: 100;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-bottom: 2px solid #25d366;
+    padding-bottom: 4px;
+}
+.learn button:hover {
+    cursor: pointer;
+    color: #1d9e13;
+}
+
 
