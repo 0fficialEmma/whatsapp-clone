@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    height: 100vh;
+    padding-top: 80px; /*reserve space for fixed header*/
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    background: rgba(252,245,235,0.65); /* translucent so blur shows */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1000;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.06); */
+}
+.navbar .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+.navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    font-weight: 700;
+    color: #1d9e13;
+    font-size: 20px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 40px;
+    gap: 30px;
+  
+}
+
+.nav a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #1d9e13;
+    padding-bottom: 5px;
+}
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+.btn button {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 1em;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+.btn button:hover {
+    background: #1d9e13;
+    color: #fff;
+    border: 1px solid #1d9e13;
+    cursor: pointer;
+}
+.hero-banner {
+    width: 100%;
+    height: 110vh;
+    background: #fcf5eb;
+    padding: 20px 30px;
+    overflow: hidden;
+}
+.container {
+    background-image: url(assets/mother\ daughter.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh;
+    width: 100%; */
+    border-radius: 30px;
+    padding: 6em 3em;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.hero-content {
+    flex: 1;
+}
+.hero-img {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+.hero-img:hover {
+    transform: scale(0.9);
+}
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin-left: 10em;
+}
+.hero-content h1 {
+    font-size: 5em;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.hero-content p {
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 5em;
+    text-align: left;
+}
+.second-section {
+    width: 100%;
+    height: 100vh;
+    background: #fcf5eb;
+    padding: 20px 30px;
+    /* overflow: hidden; */
+}
+.second-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+.second-img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.second-img:hover {
+    transform: scale(0.9);
+}
+.second-content h1 {
+    font-size: 3.7em;
+    font-weight: 400;
+    color: #1c1e21;
+    margin-bottom: 25px;
+}
+.second-content p {
+    font-size: 1.1em;
+    color: #1c1e21;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.second-content .green  button{
+    background-color: #25d366;
+}
+.second-content .green:hover  button{
+    background-color: #1c1e21;
+    border: #1c1e21;
+}
+.third-section {
+    width: 100%;
+    height: 100vh;
+    background: #fcf5eb;
+    padding: 20px 30px;
+    /* overflow: hidden; */
+}
+.third-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+.third-content h1 {
+    font-size: 3.7em;
+    font-weight: 400;
+    color: #1c1e21;
+    margin-bottom: 25px;
+    line-height: 1;
+    margin-right: 3em;
+}
+.third-content p {
+    font-size: 1.1em;
+    color: #1c1e21;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.learn button {
+    border: none;
+    background-color: #fcf5eb;
+    font-size: 1.3em;
+    font-weight: 100;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-bottom: 2px solid #25d366;
+    padding-bottom: 4px;
+}
+.learn button:hover {
+    cursor: pointer;
+    color: #1d9e13;
+}
+.fourth-section {
+    width: 100%;
+    height: 110vh;
+    background: #111b21;
+    padding: 20px 30px;
+    /* overflow: hidden; */
+}
+.fourth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7em;
+    padding: 40px 0;
+}
+.fourth-img img {
+    cursor: pointer;
+    width: 100%;
+    height: 100vh;
+}
+.fourth-content h1 {
+    font-size: 3.7em;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+.fourth-content h1 span {
+    color: #25d366;
+}
+.fourth-content p {
+    font-size: 1.1em;
+    color: #fff;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.fourth-content .learn.freely button {
+    background-color: #111b21;
+    color: #fff;
+}
+.fourth-content .learn.freely button:hover {
+    color: #25d366;
+}
+.fifth-section {
+    width: 100%;
+    height: 100vh;
+    background: #fcf5eb;
+    padding: 20px 30px;
+    /* overflow: hidden; */
+    
+}
+.fifth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    margin: 5em 0;
+}
+.fifth-img img {
+    cursor: pointer;
+    width: 100%;
+    height: 80vh;
+}
+.fifth-content h1 {
+    font-size: 3.7em;
+    font-weight: 400;
+    color: #1c1e21;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+.fifth-content p {
+    font-size: 1.1em;
+    color: #1c1e21;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.sixth-section {
+    width: 100%;
+    height: 100vh;
+    background: #fcf5eb;
+    padding: 20px 30px;
+}
+.sixth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7em;
+    margin: 5em 0;
+}
+.sixth-content h1 {
+    font-size: 3.7em;
+    font-weight: 400;
+    color: #1c1e21;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+.sixth-content p {
+    font-size: 1.1em;
+    color: #1c1e21;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.pink {
+    gap: 15em;
+}
