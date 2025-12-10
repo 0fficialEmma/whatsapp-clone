@@ -332,8 +332,18 @@ li {
     font-weight: 400;
     margin-bottom: 60px;
 }
-.pink {
-    gap: 15em;
+.btn.footer button {
+    background: #25d366;
+    color: #111b21;
+    font-weight: 600;
+    padding: 12px 28px;
+    font-size: 0.95em;
+}
+.btn.footer button:hover {
+    background: #1d9e13;
+    border-color: #1d9e13;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 .card-section {
     width: 100%;
@@ -426,4 +436,76 @@ li {
     background: #111b21;
     color: #fff;
     cursor: pointer;
+}
+.footer-section {
+    width: 100%;
+    background: #111b21;
+    padding: 80px 40px;
+    color: #fff;
+    border-top: 1px solid #25d366;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding-bottom: 3em;
+    border-bottom: 1px solid rgba(37, 211, 102, 0.3);
+}
+.footer-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #25d366;
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.footer-logo .btn {
+    display: flex;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3em;
+}
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-list p {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #25d366;
+    margin-bottom: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 4em;
+}
+.footer-list li {
+    margin-bottom: 0.8em;
+}
+.footer-list a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.footer-list a:hover {
+    color: #25d366;
+    transform: translateX(5px);
 }
